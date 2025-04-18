@@ -1,0 +1,5 @@
+uploads
+processed_frames
+frames
+models/best.pt
+__pycache__
