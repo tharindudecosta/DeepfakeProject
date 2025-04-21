@@ -3,7 +3,6 @@ import os
 import cv2
 from ultralytics import YOLO
 # from google.cloud import storage
-import boto3
 
 # # Initialize the GCP Storage client
 # storage_client = storage.Client()
