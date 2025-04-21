@@ -22,15 +22,6 @@ def process_video(video_file):
     # Load YOLO model
     # model = load_yolo_model()
 
-    bucket_name = "deepfake-project-bucket"
-    model_key = "models/best.pt"
-    local_path = "models/best.pt"
-
-    os.makedirs("modelS", exist_ok=True)
-
-    s3 = boto3.client('s3')
-    s3.download_file(bucket_name, model_key, local_path)
-
     model_path = 'models/best.pt' 
     model = YOLO(model_path)
     # Save the uploaded video temporarily
